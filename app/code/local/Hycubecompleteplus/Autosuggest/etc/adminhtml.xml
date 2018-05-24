@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <hycubecompleteplus translate="label" module="hycubecompleteplus_autosuggest">
+                                        <title>HycubecompletePlus</title>
+                                    </hycubecompleteplus>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <hycubecompleteplus translate="label" module="hycubecompleteplus_autosuggest">
+                        <title>InstantSearch+</title>
+                        <sort_order>999</sort_order>
+                    </hycubecompleteplus>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <hycubecompleteplus>
+            <title>InstantSearch+</title>
+            <sort_order>999</sort_order>
+            <action>adminhtml/redirect/goto</action>
+        </hycubecompleteplus>
+    </menu>
+</config>
